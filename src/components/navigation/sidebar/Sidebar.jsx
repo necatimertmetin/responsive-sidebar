@@ -5,7 +5,6 @@ import { sidebarButtonsConfig } from './SidebarItems.jsx'; // Adjust the path as
 
 
 const Sidebar = () => {
-    console.log(sidebarButtonsConfig)
   const [sidebarVisible, setSidebarVisible] = useState(true);
   const [visibleDropdown, setVisibleDropdown] = useState(null);
 
