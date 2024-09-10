@@ -1,28 +1,16 @@
 import React, { useState } from "react";
 import "./App.css"; // CSS dosyasını da güncelleyeceğiz
 import Sidebar from "./components/navigation/sidebar/Sidebar";
+import Navbar from "./components/navigation/navbar/Navbar";
 
-function Navbar({ toggleSidebar }) {
-  return (
-    <nav className="navbar">
-      <h1>MyApp</h1>
-      <button className="menu-btn" onClick={toggleSidebar}>
-        ☰
-      </button>
-    </nav>
-  );
-}
+
 
 function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+ 
 
   return (
     <div className="App">
-      <Navbar toggleSidebar={toggleSidebar} />
+      <Navbar/>
       <div className="horizontal-wrapper">
         <Sidebar />
         <main className="content">

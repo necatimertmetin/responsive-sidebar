@@ -25,7 +25,7 @@ const Sidebar = () => {
     <aside id="sidebar" className={`${sidebarVisible ? "" : "close"}`}>
       <ul>
         <li>
-          <span className="logo">coding2go</span>
+          <span className="logo">DropShip</span>
           <button id="toggle-btn" onClick={handleToggleSidebar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

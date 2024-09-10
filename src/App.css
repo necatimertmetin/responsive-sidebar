@@ -1,26 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root{
-    --base-clr: #555;
-    --line-clr: #42443a;
-    --hover-clr: #222533;
-    --text-clr: #e6e6ef;
-    --accent-clr: #5e63ff;
-    --secondary-text-clr: #b0b3c1;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-html{
-    font-family: "Poppins", sans-serif;
-    line-height: 1.5rem;
-}
-body{
-    min-height: 100vh;
-    min-height: 100dvh;
-    background-color: var(--base-clr);
-    color: var(--text-clr);
+/* Light Theme */
+--base-clr: #e0e0e0; /* Daha koyu açık gri arka plan rengi */
+--line-clr: #b0b0b0; /* Koyu gri çizgiler ve kenarlıklar için */
+--hover-clr: #c0c0c0; /* Hover efektleri için biraz daha koyu gri */
+--text-clr: #1a1a1a; /* Koyu metin rengi okunabilirlik için */
+--accent-clr: #4a5bff; /* Daha koyu bir vurgu rengi */
+--secondary-text-clr: #808080; /* Orta koyulukta gri ikinci metin rengi */
 
+}
+.dark-theme {
+  --base-clr: #11121a;
+  --line-clr: #42434a;
+  --hover-clr: #222533;
+  --text-clr: #e6e6ef;
+  --accent-clr: #5e63ff;
+  --secondary-text-clr: #b0b3c1;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+}
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--base-clr);
+  color: var(--text-clr);
 }
 
 .App {
@@ -34,14 +43,11 @@ body{
   height: 100%;
 }
 
-
-@media(max-width: 800px){
-  .horizontal-wrapper{
+@media (max-width: 800px) {
+  .horizontal-wrapper {
     grid-template-columns: 1fr;
   }
-  main{
+  main {
     padding: 2em 1em 60px 1em;
   }
-
- 
 }

@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
-  --base-clr: #11121a;
-  --line-clr: #42434a;
-  --hover-clr: #222533;
-  --text-clr: #e6e6ef;
-  --accent-clr: #5e63ff;
-  --secondary-text-clr: #b0b3c1;
-}
+
 *{
   margin: 0;
   padding: 0;
@@ -85,9 +78,7 @@ body{
 #sidebar a span, #sidebar .dropdown-btn span{
   flex-grow: 1;
 }
-#sidebar .dropdown-btn:hover{
-  background-color: var(--hover-clr);
-}
+
 #sidebar .sub-menu{
   display: grid;
   grid-template-rows: 0fr;
@@ -118,9 +109,6 @@ body{
     transition: 200ms ease;
   }
 }
-#toggle-btn:hover{
-  background-color: var(--hover-clr);
-}
 #sidebar.close #toggle-btn svg{
 transform: rotate(180deg);
 }
@@ -141,21 +129,13 @@ main p{
   h2, p { margin-top: 1em }
 }
 
-.sub-menu li{
-  display: flex;
-  align-items: center;
-  margin-left: 1em;
-  padding-left: 1em;
-  border-radius: .5em;
-  cursor: pointer;
-}
-
-.sub-menu li:hover{
+#sidebar a:hover, #sidebar .dropdown-btn:hover{
   background-color: var(--hover-clr);
-
 }
-.sub-menu li a{
-  padding-left: 0px;
+
+.sub-menu a{
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 @media(max-width: 800px){

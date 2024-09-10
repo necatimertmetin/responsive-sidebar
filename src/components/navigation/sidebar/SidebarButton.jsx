@@ -45,10 +45,15 @@ const SidebarButton = ({
           <ul className={`sub-menu ${isSubMenuVisible ? "show" : ""}`}>
             <div>
               {sidebarButtonConfig.submenuItems.map((item, index) => (
-                <li key={index} onClick={() => {window.location.href = item.href}}>
+                <a
+                  key={index}
+                  onClick={() => {
+                    window.location.href = item.href;
+                  }}
+                >
                   {item.svgIcon && item.svgIcon}
-                  <a href={item.href}>{item.title}</a>
-                </li>
+                  <span>{item.title}</span>
+                </a>
               ))}
             </div>
           </ul>
